@@ -1,0 +1,6 @@
+sudo
+rm
+&
+;
+dd
+etc

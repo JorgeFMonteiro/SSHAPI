@@ -1,6 +1,5 @@
 FROM alpine:3.16.2
 
-
 RUN mkdir /app
 COPY . /app
 
@@ -19,7 +18,6 @@ RUN pip install -r /app/requirements.txt
 RUN apk del python3-dev build-base linux-headers pcre-dev
 
 COPY supervisord.ini /etc/supervisor.d/supervisord.ini
-
 
 EXPOSE 5000
 
